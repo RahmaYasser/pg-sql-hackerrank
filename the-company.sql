@@ -7,3 +7,7 @@ INNER JOIN Company As c
 ON c.company_code = e.company_code
 GROUP BY c.company_code,c.founder
 ORDER BY c.company_code;
+
+
+-- useful links
+-- https://stackoverflow.com/questions/2421388/using-group-by-on-multiple-columns
