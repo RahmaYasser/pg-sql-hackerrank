@@ -3,13 +3,17 @@
 
 SELECT concat(name,'(',LEFT(occupation,1),')')
 FROM occupations
+ORDER BY name
 
 --second set
 
-SELECT concat('There are a total ', COUNT(*) , ' of ', LOWER(occupation),'s') 
+
+SELECT concat('There are a total ', COUNT(*) , ' of ', LOWER(occupation),'s')  as total 
 FROM occupations
 GROUP BY occupation
-ORDER BY COUNT(*)
+ORDER BY total
+
+
 
 
 
